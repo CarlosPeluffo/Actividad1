@@ -38,14 +38,15 @@ public class MainActivity extends AppCompatActivity {
         super.onPause();
     }
 
-    public class LlamadaUsb extends BroadcastReceiver {
+    /*public class LlamadaUsb extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
             if(intent.getExtras().getBoolean("connected")) {
                 Intent i = new Intent(Intent.ACTION_CALL, Uri.parse("tel:911"));
-                startActivity(i);
+                //startActivity(i);
+                context.startActivity(i);
                 Toast.makeText(context, "Llamando al 911", Toast.LENGTH_LONG).show();
             }
         }
-    }
+    }*/
 }
